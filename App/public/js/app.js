@@ -122,9 +122,17 @@ const downloadFile = (e) => {
 
             totalLEN += value.length;
             ttlREC = (totalLEN * 100) / FL_SIZE;
+
             e.target.parentNode.parentNode.children[1].style.transform = `translateX(-${
               100 - ttlREC
             }%)`;
+
+            e.target.parentNode.parentNode.children[3].style.display = `flex`;
+            e.target.parentNode.parentNode.children[3].innerHTML = `
+             ${(totalLEN / oneMB).toFixed(2)} MB / ${(FL_SIZE / oneMB).toFixed(
+              2
+            )} MB
+            `;
           }
 
           // Close the stream
@@ -249,10 +257,11 @@ const firstForeachShowName = (e) => {
   p.appendChild(sp1);
   p.appendChild(sp2);
   p.innerHTML += `
-   <div>
+   <div style="z-index:2">
     <button id="d_ID" style="${styleButton}" data-downloadlinktype="${e}">Download</button>
     <button id="del_ID" style="${styleButton1}" data-dellinktype="${e}">Delete</button>
    </div>
+   <span style="z-index:1" id="downloadedData_ProgressID_"></span>
   `;
   document.body.appendChild(p);
 };

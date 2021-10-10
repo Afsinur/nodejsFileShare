@@ -80,3 +80,17 @@ span#progress_value_show_span {
   align-items: center;
   justify-content: center;
 }
+
+span#downloadedData_ProgressID_ {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #000000cc;
+  height: 45%;
+  width: 50%;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}
