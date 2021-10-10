@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(25, 226, 166);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(18, 170, 124);
+}
+
+body {
+  font-weight: 500;
+  background: #454545;
+  color: #cecece;
+  width: 100%;
+  height: 100vh;
+}
+
+div.app {
+  position: relative;
+  padding: 5px;
+  margin-top: 65px;
+  width: 50%;
+  overflow-x: hidden;
+}
+
+.form_1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #00000046;
+  width: 290px;
+  border-radius: 5px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+span#send_span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(120, 53, 228, 0.671);
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+span#progress_value_show_span {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000cc;
+  height: 80%;
+  width: 50%;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}

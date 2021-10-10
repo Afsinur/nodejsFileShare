@@ -1,0 +1,12 @@
+netsh wlan show drivers
+netsh wlan set hostednetwork mode=allow ssid="set router name" key="set router password"
+netsh wlan start hostednetwork
+
+TO STOP
+netsh wlan stop hostednetwork
+
+CLIENTS
+netsh wlan show hostednetwork
+
+PASSWORD CHECK
+netsh wlan show hostednetwork setting=security

@@ -1,0 +1,1 @@
+call netsh wlan stop hostednetwork

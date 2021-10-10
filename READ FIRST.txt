@@ -1,0 +1,16 @@
+Assalamuyalaikum, Bismillah..
+
+-IF BOTH DEVICE ARE CONNECTED TO SAME Wifi OR YOU ARE HOSTING A ROUTER FROM YOUR PC
+-----------------------------------------------------------------------------------
+ # install nodejs first, if not installed on your computer.
+ # edit file, named startApp first, as mentioned in that file.
+ # after app started, you both or everyone can transfar data to same webpage using a browser insha Allah.
+ # website name will be your ipv4(exmpl: 192.168.1.2) address on port-number(exmpl: 1000), like -> "ipv4:port-number", "exmpl: 192.168.1.2:1000"
+ # to know ipv4 of that computer in which the app started open command prompt and type "ipconfig".
+ # finale website link will be something like "192.168.1.2:1000" insha Allah.
+
+-FOR(HOSTING A ROUTER FROM YOUR PC) ROUTER SETUP
+------------------------------------------------
+ # if you want to make your pc a router than edit "Computer Router" folder's files, as mentioned in thoese files.
+ # run "Computer Router" folder's files as administrator.
+ # watch "Computer Router" folder's, "videos" folder's, files for your computer's router setup.
